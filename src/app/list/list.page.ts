@@ -11,8 +11,7 @@ export class ListPage{
   constructor(public usuarioServicioService: UsuarioServicioService ) {
   this.usuarioServicioService.getUsers()
     .subscribe(
-      (data) => { // Success
-        console.log(data);
+      (data) => { 
         this.users = data;
       },
       (error) =>{
